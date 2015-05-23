@@ -47,6 +47,12 @@ class BayesNetwork
         double[] dubsE = {0.5, 0.5, 0.5, 0.5};
         Factor factorE = new Factor(varsE, dubsE);
         
+        ArrayList<Factor> network1 = new ArrayList<>();
+        network1.add(factorA);
+        network1.add(factorB);
+        network1.add(factorC);
+        network1.add(factorD);
+        network1.add(factorE);
         
         
         //      
@@ -61,5 +67,17 @@ class BayesNetwork
         //     ---  /           \  ---
         //    | D |               | E |
         //     ---                 ---
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 }
