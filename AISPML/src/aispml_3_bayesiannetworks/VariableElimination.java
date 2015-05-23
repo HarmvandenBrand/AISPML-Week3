@@ -16,7 +16,6 @@ public class VariableElimination {
     
     public Factor elimination(ArrayList<Variable> vs, ArrayList<Factor> fs, ArrayList<VariBool> given, Variable query)
     {
-        System.out.println(given.get(0));
         for(int i=0; i< vs.size(); i++)
         {
             if(!vs.get(i).equals(query))
@@ -34,14 +33,13 @@ public class VariableElimination {
                             boolean contains = false;
                             for(int b=0; b<variables.length; b++)
                             {
-                                if(variables[b].equals(given))
+                                if(variables[b].equals(given.get(g).getVar()))
                                 {
                                     contains = true;
                                 }
                             }
                             if(contains)
                             {
-                                System.out.println("it is found!");
                                 Factor newFact = fs.get(f).setGiven(given.get(g).getVar(), given.get(g).getBool());
                                 fs.add(newFact);
                                 fs.remove(f);

@@ -63,7 +63,7 @@ public class Main {
         ArrayList<VariBool> given = new ArrayList<>();
         given.add(new VariBool(Variable.B, true));
         
-        Variable query = Variable.D;
+        Variable query = Variable.A;
         
         VariableElimination eli = new VariableElimination();
         
