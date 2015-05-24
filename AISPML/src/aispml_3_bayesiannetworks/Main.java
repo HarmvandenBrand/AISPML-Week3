@@ -19,12 +19,17 @@ public class Main {
     public static void main(String[] args)
     {
         ModelView view = new ModelView();
+        
         /*
         NetworkInit initialize = new NetworkInit();
         initialize.makeNetworks();
         ArrayList<BayesNetwork> networks = initialize.getNetworks();
         
-        
+        for(Factor fact: networks.get(2).getFactors())
+        {
+            System.out.println(fact);
+        }
+       
         Variable[] vars1 = new Variable[3];
         vars1[0] = Variable.A;
         vars1[1] = Variable.B;

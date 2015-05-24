@@ -52,9 +52,9 @@ class Factor
     public String toString()
     {
         String answer = "";
-        for(int i=0; i<columnLength; i++)
+        for(Variable var: variables)
         {
-            switch(variables[i])
+            switch(var)
             {
                 case A: answer = answer + "A";
                         break;
@@ -71,6 +71,8 @@ class Factor
                 case G: answer = answer + "G";
                         break;
                 case H: answer = answer + "H";
+                        break;
+                default:answer = answer + "?";
                         break;
             }
             answer = answer + "  ";

@@ -48,8 +48,8 @@ public class NetworkInit {
         
         Variable[] varsC = new Variable[3];
         varsC[0] = Variable.C;
-        varsC[0] = Variable.B;
-        varsC[0] = Variable.A;
+        varsC[1] = Variable.B;
+        varsC[2] = Variable.A;
         double[] dubsC = {0.999, 0.001 , 0.98, 0.02, 0.97, 0.03 , 0.95, 0.05};        
         Factor factorC = new Factor(varsC, dubsC);
         
