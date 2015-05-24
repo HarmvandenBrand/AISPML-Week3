@@ -15,6 +15,8 @@ import java.util.Scanner;
 public class ModelView {
     ArrayList<BayesNetwork> networks = new ArrayList<>();
     private Scanner scan = new Scanner(System.in);
+    public static int MULTICOUNTER = 0;
+    public static int SUMCOUNTER = 0;
     
     public ModelView()
     {
@@ -130,5 +132,7 @@ public class ModelView {
         
         System.out.println("The chances of the query are:");
         System.out.println(fact);
+        System.out.println("The amount of sums is: " + SUMCOUNTER);
+        System.out.println("The amount of multiplications is: " + MULTICOUNTER);
     }
 }

@@ -143,6 +143,7 @@ class Factor
                         if(equal)
                         {
                             double combinedChance = (rowArray[n].getChance() + rowArray[m].getChance());
+                            ModelView.SUMCOUNTER ++;
                             used.add(n);
                             used.add(m);
                             newChances[count] = combinedChance;
@@ -236,6 +237,7 @@ class Factor
             }
             
             combChances[n] = (piece1.getChance() * piece2.getChance());
+            ModelView.MULTICOUNTER++;
         }
         Factor combFact = new Factor(combVariables, combChances);
         return combFact;
@@ -288,7 +290,9 @@ class Factor
                 {
                     if(rowArray[n].getBool(v).equals(givenBool))
                     {
+                        
                         newChances[count] = rowArray[n].getChance();
+                        ModelView.SUMCOUNTER++;
                         count++;
                     }
                 }
