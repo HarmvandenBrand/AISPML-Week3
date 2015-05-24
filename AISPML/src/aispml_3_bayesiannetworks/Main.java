@@ -18,8 +18,6 @@ public class Main {
      */
     public static void main(String[] args)
     {
-        BayesNetwork bn = new  BayesNetwork();
-        
         Variable[] vars1 = new Variable[3];
         vars1[0] = Variable.A;
         vars1[1] = Variable.B;
