@@ -18,6 +18,13 @@ public class Main {
      */
     public static void main(String[] args)
     {
+        ModelView view = new ModelView();
+        /*
+        NetworkInit initialize = new NetworkInit();
+        initialize.makeNetworks();
+        ArrayList<BayesNetwork> networks = initialize.getNetworks();
+        
+        
         Variable[] vars1 = new Variable[3];
         vars1[0] = Variable.A;
         vars1[1] = Variable.B;
@@ -67,6 +74,8 @@ public class Main {
         
         Factor result = eli.elimination(varsAll, factAll, given, query);
         System.out.println(result);
+        */
+        
         /*
         //Set given:
         Factor givenFact = fact.setGiven(Variable.A, true);
